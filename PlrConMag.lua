@@ -6,5 +6,17 @@ ll.registerPlugin("PlrConMag", "A lua plugin that tracks player connection to th
 
 --Server side--
 local DBS = "" -- Insert where you will store the player data
+--[[ db format
+[Player] = {
+  Data = {};
+  Worlds = {
+    [SMP1] = {
+      location = {}
+      inv = {}
+};
+  };
+  }; ]]--
 
-local function PlrJoined = 
+local function PlrJoined (plr)
+
+end
